@@ -23,6 +23,9 @@ The above arrows point to positions where the corresponding bits are different.
 ```
 
 #### Java
+ Elegant solution using out of the box bitCount method:
+  - time:  O(1)
+  - space: O(1)
 ```java
 public class Solution {
     public int hammingDistance(int x, int y) {
@@ -32,6 +35,9 @@ public class Solution {
 ```
 
 #### JavaScript
+ Naive solution via string
+  - time:  O(n)
+  - space: O(n)
 ```javascript
 var hammingDistance = function(x, y) {
     return Number(x ^ y).toString(2).replace(/0/g, '').length;
